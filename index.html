@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="functions.js" defer></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <div class="overlay">
+        <h2>Choose your name</h2>
+        <form>
+            <section id="player-name-input">
+                <label for="player-name" name='playername'>Player name</label>
+                <input type="text" id="player-name" required maxlength="20">
+            </section>
+            <section id="overlay-buttons">
+                <button id="cancel-btn" type="reset">Cancel</button>
+                <button id="submit-btn" type="submit">Confirm</button>
+            </section>
+        </form>
+    </div>
+    <header>
+
+        <h2>Play Tic, Tac, Toe Game</h2>
+        <p>Developed with HTML,CSS and JavaScript.</p>
+
+    </header>
+    <section id="players-info">
+        <div id="player-1" class="players">
+            <p>Player 1</p>
+            <h2>player name</h2>
+            <p class="symbol">X</p>
+            <button id="edit-player-1" class="edit-player-btn" data-playerid="1">Edit</button>
+        </div>
+        <div id="player-2" class="players">
+            <p>Player 2</p>
+            <h2>player name</h2>
+            <p class="symbol">O</p>
+            <button id="edit-player-2" class="edit-player-btn"data-playerid="2">Edit</button>
+        </div>
+
+    </section>
+    <section>
+        <button id="start-game-btn">Start New Game</button>
+    </section>
+    <section id="game-status">
+        <h2 id="winner"></h2>
+        <p>Click "Start New Game" above to start a new game</p>
+    </section>
+    <section id="game-board">
+        <p>It,s your turn <span id="player-turn">player name</span></p>
+        <ol>
+            <li data-row="1" data-col="1"></li>
+            <li data-row="1" data-col="2"></li>
+            <li data-row="1" data-col="3"></li>
+            
+
+            <li data-row="2" data-col="1"></li>
+            <li data-row="2" data-col="2"></li>
+            <li data-row="2" data-col="3"></li>
+
+
+            <li data-row="3" data-col="1"></li>
+            <li data-row="3" data-col="2"></li>
+            <li data-row="3" data-col="3"></li>
+        </ol>
+    </section>
+</body>
+
+</html>
